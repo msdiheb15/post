@@ -1,0 +1,16 @@
+* {
+    background-color: white;
+}
+
+.centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+ .card {
+     text-align: center;
+ }
+
+ .card > button {
+     width: 100px;
+ }

@@ -1,0 +1,22 @@
+* {
+    background-color: white;
+}
+
+.logo-post {
+    margin-bottom: 20px;
+}
+
+input[type=email]{
+    margin-bottom: 25px;
+}
+input[type=password]{
+    margin-bottom: 25px;
+}
+
+.centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+

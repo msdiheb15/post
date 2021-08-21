@@ -1,0 +1,81 @@
+<figure class="avatar">
+    <img class="logo-post" height="200px" width="200px" centered src="assets\image\posttn.png">
+</figure>
+<div id="app">
+    <div class="section">
+      <div class="container">
+
+        <form id="register-form" ng-submit="insertData()" >
+            <div class="field">
+                <label class="label">Nom de l'article</label>
+                <div class="control">
+                  <input class="input" type="text"placeholder="Nom de l'article" ng-app="myapp" ng-controller="formcontroller"  >
+                </div>
+                <label class="label">Nom de l'article</label>
+                <div class="select">
+                    <select>
+                      <option>--choisir votre type d'article-- </option>
+                      <option>With options</option>
+                    </select>
+                  </div>
+              </div>  
+              <div class="field">
+                <label class="label">Code a barre</label>
+                <div class="control">
+                  <input class="input" type="text" placeholder="Code a barre" >
+                </div>
+               
+              </div>
+              <div class="field">
+                <label class="label">Prix de vente</label>
+                <div class="control">
+                  <input class="input" type="text" placeholder="Prix de vente" >
+                </div>
+               
+              </div>
+              <div class="field">
+                <label class="label">Adresse</label>
+                <div class="control">
+                  <input class="input" type="text" placeholder="Adresse" >
+                </div>
+               
+              </div>
+          <div class="field">
+            <label class="label" for="code">Poids</label>
+            <div class="control ">
+              <input class="input" type="text" placeholder="Poids"/>
+            </div>
+            <label class="label" for="email">Taxe</label>
+            <div class="control ">
+              <input class="input" type="text" placeholder="Taxe" name="Taxe"/>
+            </div>
+            <div class="columns row-one">
+           
+            </div>
+            <div class="columns">
+              <div class="column">
+                <label class="label" >code expediteur</label>
+                <div class="control ">
+                  <input class="input" type="text" placeholder="code expediteur" />
+                </div>
+              </div>
+              <div class="column">
+                <label class="label" >code destinataire</label>
+                <div class="control ">
+                  <input class="input" type="text" placeholder="code destinataire" />
+                </div>
+              </div>
+            </div>
+            <div class="field is-grouped buttons">
+              <div class="control">
+                <button  id="retour" class=" button is-medium"> <a href="/destinataire">Retour</a></button>
+              </div>
+              <div class="control">
+                <button id="suivant" class="button is-primary is-medium"><a href="/review">Suivant</a></button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>

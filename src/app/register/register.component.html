@@ -1,0 +1,132 @@
+<script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-functions.js"></script>
+<figure class="avatar">
+  <img class="logo-post" height="200px" width="200px" centered
+    src="assets\image\posttn.png">
+</figure>
+<div id="app">
+  <div class="section">
+    <div class="container">
+
+      <form name="form" [formGroup] ='myForm'>
+        <div class="field">
+          <label class="label">Nom</label>
+          <div class="control has-icons-left has-icons-right">
+            <input formControlName='nom' #nomclient required class="input " type="text" placeholder="insérez votre Nom"
+             name='nom'>
+            <span class="icon is-small is-left">
+              <i class="far fa-user"></i>
+            </span>
+            <span class="icon is-small is-right">
+            
+            </span>
+         
+          </div>
+        </div>
+        <div class="field">
+          <label class="label">Raison sociale</label>
+          <div class="control has-icons-left has-icons-right">
+            <input formControlName='raison_social'  #rsclient required class="input" type="text" placeholder="Raison social"
+             name = 'raison_social'
+             >
+            <span class="icon is-small is-left">
+              <i class="fas fa-building"></i>
+            </span>
+            <span class="icon is-small is-right">
+          
+            </span>
+           
+
+          </div>
+        </div>
+        <div class="field">
+          <label class="label">Adresse</label>
+          <div class="control has-icons-left has-icons-right">
+            <input formControlName='address'  #adclient class="input" type="text" placeholder="Addresse" 
+              name='ad'>
+            <span class="icon is-small is-left">
+              <i class="fas fa-address-card"></i>
+            </span>
+            <span class="icon is-small is-right">
+        
+            </span>
+      
+
+          </div>
+        </div>
+        <div class="field">
+          <label class="label">Tel</label>
+          <div class="control has-icons-left has-icons-right">
+            <input  formControlName='tel'  required  name='tel'
+               class="input" type="tel"  #telclient placeholder="insérez votre télephone"
+              minlength="8" maxlength="8">
+
+            <span class="icon is-small is-left">
+              <i class="fas fa-mobile-alt"></i>
+            </span>
+            <span class="icon is-small is-right">
+         
+            </span>
+   
+
+          </div>
+        </div>
+        <div class="field">
+          <label class="label">Code postal</label>
+          <div class="control">
+            <input   formControlName='code_postal'  cpclient class="input" type="text" placeholder="Code postal">
+          </div>
+
+        </div>
+        <div class="field">
+          <label class="label" for="code">Code douane</label>
+          <div class="control ">
+            <input formControlName='code_douane'  #cdclient class="input" type="text" placeholder="Code douane" />
+          </div>
+          <label class="label" for="email">Email</label>
+          <div class="control ">
+            <input  formControlName='email'   #emailclient class="input" type="email" placeholder="Email" name="email" />
+          </div>
+          <div class="columns row-one">
+            <div class="column">
+              <label class="label" for="firstName">Fax</label>
+              <div class="control">
+                <input  formControlName='fax'  #faxclient class="input" type="text" placeholder="Fax" name="firstName" />
+              </div>
+            </div>
+            <div class="column">
+              <label class="label" for="lastName">Ville</label>
+              <div class="control">
+                <input  formControlName='ville' #villeclient class="input" type="text" placeholder="Ville" name="lastName" />
+              </div>
+            </div>
+          </div>
+          <div class="columns">
+            <div class="column">
+              <label class="label" for="password"> mot de passe</label>
+              <div class="control ">
+                <input  formControlName='motpass'  #motpassclient  class="input" type="password" placeholder="mot de passe" name="password" />
+              </div>
+            </div>
+            <div class="column">
+              <label class="label" for="retypePassword"> Retaper le mot de passe</label>
+              <div class="control ">
+                <input formControlName='remotpass'  #repassclient class="input" type="password" placeholder="Retaper  le mot de passe" />
+              </div>
+            </div>
+          </div>
+          <div class="field is-grouped buttons">
+            <div class="control">
+              <button id="retour" class=" button is-medium"> <a href="/login">Retour</a></button>
+            </div>
+            <div class="control">
+              <button (click)='showinfo()'id="suivant" class="button is-primary is-medium">Suivant</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
